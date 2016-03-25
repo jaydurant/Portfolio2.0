@@ -11,16 +11,16 @@ const properties = {
 
 describe ('MenuLink', () => {
 	const renderer = TestUtils.createRenderer();
-	renderer.render(<MenuLink {...props} />);
+	renderer.render(<MenuLink {...properties} />);
 	const renderedTree = renderer.getRenderOutput();
 
 	const li = renderedTree;
 	const link = renderedTree.props.children;
 
 	it('displays a link with a anchor tag', () => {
-		expect(li.props.className).toBe(properties.className);
+		expect(li.props.className).toMatch(/menu/);
 
 		expect(link.props.to).toBe(properties.to);
-		expect(link.props.children).toBe(proper.text);
+		expect(link.props.children).toBe(properties.text);
 	});
 });

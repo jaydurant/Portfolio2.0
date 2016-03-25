@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch --verbose -o",
+    "test": "jest --verbose --watch",
     "build": "webpack",
     "dev": "webpack-dev-server --progress",
     "lint": "eslint . --ext .js --ext .jsx ; exit 0"
