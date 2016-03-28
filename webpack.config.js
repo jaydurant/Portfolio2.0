@@ -30,6 +30,10 @@ module.exports = {
 		]
 	},
 
+	resolve: {
+		extensions: ['','.js','.jsx']
+	},
+
 	eslint: {
 		failOnWarning: false,
 		failOnError: false,
