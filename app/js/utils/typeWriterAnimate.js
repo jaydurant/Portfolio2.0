@@ -35,7 +35,7 @@ function addText(ref, array, index) {
 	const textLength = array[index].length;
 	let counter = 1;
 
-	if (htmlCheck(array[index])) {
+	if (htmlCheck(textString)) {
 		const regExp = /<(.*?)>/g;
 		const elementString = regExp.exec(textString)[1];
 		const htmlElement = document.createElement(elementString);

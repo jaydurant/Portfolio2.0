@@ -5,7 +5,9 @@ class AppContainer extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			menuLinks: [{ to: '/portfolio', text: 'portfolio' },
+			menuLinks: [
+			{ to: '/about', text: 'about' },
+			{ to: '/portfolio', text: 'portfolio' },
 			{ to: '/experience', text: 'experience' }],
 		};
 	}

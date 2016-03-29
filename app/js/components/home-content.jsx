@@ -17,10 +17,6 @@ class HomeContent extends React.Component {
 		typeWriterAnimate(this._typeSpan, this.state.introText);
 	}
 
-	componentWillUnmount() {
-
-	}
-
 	render() {
 		return (
 			<div>
