@@ -4,7 +4,6 @@ import { Link } from 'react-router';
 class AboutContent extends React.Component {
 	constructor() {
 		super();
-
 		this.state = {
 			title: 'About Me',
 			paragraph:

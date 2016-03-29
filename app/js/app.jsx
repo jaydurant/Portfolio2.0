@@ -6,6 +6,7 @@ import { createHashHistory } from 'history';
 import AppContainer from './components/app-container';
 import HomeContent from './components/home-content';
 import AboutContent from './components/about-content';
+import ContactContent from './components/contact-content';
 
 
 function renderPage() {
@@ -16,6 +17,7 @@ function renderPage() {
 			<Route path="/" component={AppContainer} >
 				<IndexRoute component={HomeContent} />
 				<Route path="/about" component={AboutContent} />
+				<Route path="/contact" component={ContactContent} />
 			</Route>
 		</Router>
 		), appRootElement);
