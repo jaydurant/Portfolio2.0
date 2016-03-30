@@ -13,7 +13,7 @@ class ProjectsContent extends React.Component {
 			projects: [
 				{
 					name: 'Portfolio 2.0',
-					description: 'Current Site built on React',
+					description: 'Current Site built with React.js',
 					image: 'app/assets/jscalc.jpg',
 				},
 				{
