@@ -6,10 +6,10 @@ class AppContainer extends React.Component {
 		super();
 		this.state = {
 			menuLinks: [
-				{ to: '/about', text: 'about' },
-				{ to: '/portfolio', text: 'portfolio' },
-				{ to: '/experience', text: 'experience' },
-				{ to: '/contact', text: 'contact' },
+				{ to: '/about', text: 'About' },
+				{ to: '/projects', text: 'Projects' },
+				{ to: '/experience', text: 'Experience' },
+				{ to: '/contact', text: 'Contact' },
 			],
 		};
 	}

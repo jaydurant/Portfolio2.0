@@ -8,6 +8,7 @@ import HomeContent from './components/home-content';
 import AboutContent from './components/about-content';
 import ContactContent from './components/contact-content';
 import ExperienceContent from './components/experience-content';
+import ProjectsContent from './components/projects-content';
 
 
 function renderPage() {
@@ -20,6 +21,7 @@ function renderPage() {
 				<Route path="/about" component={AboutContent} />
 				<Route path="/contact" component={ContactContent} />
 				<Route path="/experience" component={ExperienceContent} />
+				<Route path="/projects" component={ProjectsContent} />
 			</Route>
 		</Router>
 		), appRootElement);
