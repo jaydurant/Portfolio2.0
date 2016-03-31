@@ -1,0 +1,48 @@
+.header-container{
+	position:fixed;
+	overflow:auto;
+	background-color:rgba(0, 0, 0, 0.24);
+	border-bottom:1px solid grey;
+	z-index:100;
+}
+
+.menu-list{
+	text-align:right;
+}
+
+.menu-home-link, .menu-link{
+	a{
+		font-weight:bold;
+	}
+	
+}
+
+.menu-home-link {
+	@include rem('font-size',18);
+	@include rem('padding',20,0,20,20);
+		
+	a{
+		transition: 0.5s all;
+		display:inline-block;
+
+		&:hover{
+			transform:scale(1.05);
+			color: grey;
+		}
+	}
+}
+
+.menu-link{
+	@include rem('font-size',14);
+	@include inline-block();
+	a{
+		@include rem('padding',22);
+		display:block;
+		transition: 0.5s all;
+
+		&:hover{
+			transform:scale(1.05);
+			background-color: rgba(255,255,255,0.30);
+		}
+	}
+}

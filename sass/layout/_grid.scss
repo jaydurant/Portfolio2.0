@@ -1,0 +1,30 @@
+//custom grid to use within applications
+.container{
+	width: $full-width;
+}
+
+@each $column, $width in (one-quarter: 0.25, one-half: 0.5, three-quarters: 0.75, full-width:1){
+	.#{$column}-s {
+		@include inline-block();
+		width: $full-width * $width;
+	}
+}
+
+
+@include min-breakpoint($sassySmall){
+	@each $column, $width in (one-quarter: 0.25, one-half: 0.5, three-quarters: 0.75, full-width:1){
+		.#{$column}-m {
+			@include inline-block();
+			width: $full-width * $width;
+		}
+	}
+}
+
+@include min-breakpoint($sassyMed){
+	@each $column, $width in (one-quarter: 0.25, one-half: 0.5, three-quarters: 0.75, full-width:1){
+		.#{$column}-l {
+			@include inline-block();
+			width: $full-width * $width;
+		}
+	}
+}

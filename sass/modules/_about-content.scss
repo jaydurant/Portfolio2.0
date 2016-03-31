@@ -1,0 +1,37 @@
+.about-container{
+	text-align:center;
+	min-height: 100vh;
+
+	h1{
+		@include rem('font-size',50);
+		padding-top: 20vh;
+		@extend %h1-shadow;
+	}
+}
+
+.about-paragraph{
+	@include rem("font-size",22);
+	text-align:justify;
+	line-height:30px;
+}
+
+.about-contact-text{
+	@include rem("font-size",18);
+	text-align:center;
+
+	a{
+		@include inline-block();
+		color:#7373FF;
+		transition: .5s all;
+
+		&:hover{
+			transform:scale(1.1);
+		}
+	}
+}
+
+.about-mantra{
+	@include rem('margin-top',10);
+	@include rem('font-size',20);
+	border-top: 1px solid grey;
+}

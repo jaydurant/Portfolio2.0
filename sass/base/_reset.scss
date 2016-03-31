@@ -1,5 +1,11 @@
+*{
+  box-sizing:border-box;
+  color:$text-color;
+}
+
 html {
   font-size:100%;
+  background-color:black;
 }
 
 body {
@@ -45,6 +51,10 @@ fieldset {
 
 button {
   cursor:pointer;
+}
+
+a {
+  text-decoration:none;
 }
 
 %clearfix {

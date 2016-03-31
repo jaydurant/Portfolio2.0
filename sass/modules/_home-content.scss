@@ -1,0 +1,43 @@
+.home-container{
+	min-height:100vh;
+	text-align:center;
+	background: url(../../app/assets/city-skyline.jpg) no-repeat center center;
+	background-size: cover;
+
+	h1{
+		@include rem('font-size',50);
+		padding-top:40vh;
+		font-weight:600;
+		@extend %h1-shadow;
+	}
+
+}
+
+.home-typewriter{
+	@include rem('font-size',30);
+	@extend %normal-shadow;
+
+	code{
+		@include roundedCorners(5);
+		background-color:white;
+		color:#F55858;
+		text-shadow:none;
+	}
+}
+
+.home-typecursor{
+	@extend .home-typewriter;
+	@extend %normal-shadow;
+	@include rem('margin-left',2);
+
+	@include animation('0.70s linear 0s infinite blink');
+}
+
+@include keyframes(blink){
+	0%{
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
