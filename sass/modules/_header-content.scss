@@ -18,16 +18,18 @@
 }
 
 .menu-home-link {
-	@include rem('font-size',18);
+	@include rem('font-size',17);
 	@include rem('padding',20,0,20,20);
+	@extend %h1-shadow;
 		
 	a{
 		transition: 0.5s all;
-		display:inline-block;
+		@include inline-block();
 
-		&:hover{
-			transform:scale(1.05);
-			color: grey;
+		&:focus,&:hover{
+			transform: translate(1px,-4px);
+			text-shadow:-3px 2px 0px #724E72;
+			color: #FFF06E;
 		}
 	}
 }

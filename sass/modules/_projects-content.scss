@@ -1,10 +1,10 @@
 .projects-container{
 	text-align:center;
+	padding-top:10vh;
 
 	h1{
 		@include rem('font-size',50);
 		@extend %h1-shadow;
-		padding-top:10vh;
 	}
 }
 
@@ -72,6 +72,7 @@
 	background:white;
 	p{
 		color:black;
+		@include rem('font-size',18);
 	}
 	
 }

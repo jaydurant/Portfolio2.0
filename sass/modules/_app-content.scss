@@ -1,3 +1,4 @@
 .app-container{
-	
+	@extend %h1-shadow;
+	@include rem('font-size',50);
 }

@@ -1,10 +1,10 @@
 .about-container{
 	text-align:center;
 	min-height: 100vh;
+	padding-top: 20vh;
 
 	h1{
 		@include rem('font-size',50);
-		padding-top: 20vh;
 		@extend %h1-shadow;
 	}
 }

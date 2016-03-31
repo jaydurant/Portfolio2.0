@@ -1,0 +1,56 @@
+.contact-container{
+	@include align(center);
+	padding-top:30vh;
+
+	h1{
+			@extend %h1-shadow;
+			@include rem("font-size",50);
+	}
+
+	h2{
+		@include rem("font-size")
+	}
+
+	h2 + a{
+		@include rem("font-size",25);
+		@extend %h1-shadow;
+		@include inline-block();
+		transition: 0.3s all;
+
+		&:focus,&:hover{
+			transform: translate(0px,-4px);
+		}
+	}
+
+	h3{
+		@include rem("font-size",20);
+		@include rem("margin-top",30);
+	}
+}
+
+.contact-buttonlist{
+	button{
+		@include roundedCorners(4);
+		@include rem("font-size",25);
+		@include rem("padding",10);
+		color:white;
+		border:none;
+		background-color: #B20000;
+		box-shadow: 3px 3px 1px 0 #CFFFE8;
+		transition: 0.3s all;
+
+		&:focus,&:hover{
+			transform: translate(2px,2px);
+			outline:none;
+			box-shadow: 5px 5px 1px 0 #CFFFE8;
+		}
+	}
+
+	li:first-child ~ li{
+		@include rem("margin-top", 10);
+	}
+
+	i{
+		@include rem("margin-right",5);
+	}
+}
