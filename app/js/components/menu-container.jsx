@@ -4,11 +4,9 @@ import MenuLink from './menu-link';
 function MenuContainer(props) {
 	const menuLinks = props.menuLinks.map((elem, i) => <MenuLink {...elem} key={i} />);
 	return (
-		<nav>
-			<ul>
+			<ul className="menu-list">
 				{menuLinks}
 			</ul>
-		</nav>
 		);
 }
 

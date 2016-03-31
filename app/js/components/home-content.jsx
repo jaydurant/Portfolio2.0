@@ -6,7 +6,7 @@ class HomeContent extends React.Component {
 		super();
 		this.state = {
 			introText: [
-				'To Become A Front End Developer',
+				'To Become A World Class Front End Developer',
 				'Help My Community Through Code',
 				"<code>import {Education, Grit, Persistence} from 'open-source';</code>",
 			],
@@ -19,12 +19,12 @@ class HomeContent extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className="home-container">
 				<h1>My Goals and Aspirations</h1>
 				<div>
-					<span ref={(elem) => this._typeSpan = elem }>
+					<span className="home-typewriter" ref={(elem) => this._typeSpan = elem }>
 					</span>
-					<span>|</span>
+					<span className="home-typecursor">|</span>
 				</div>
 			</div>
 			);

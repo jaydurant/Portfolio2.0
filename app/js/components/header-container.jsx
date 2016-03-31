@@ -4,13 +4,13 @@ import { IndexLink } from 'react-router';
 
 function HeaderContainer(props) {
 	return (
-		<header>
-			<div>
-				<IndexLink to="/">Jason Durant | Front End Developer</IndexLink>
+		<header className="container header-container">
+			<div className="one-half-m menu-home-link">
+				<IndexLink to="/">JASON DURANT - FRONT END DEVELOPER</IndexLink>
 			</div>
-			<div>
+			<nav className="one-half-m">
 				<MenuContainer {...props} />
-			</div>
+			</nav>
 		</header>
 		);
 }

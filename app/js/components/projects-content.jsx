@@ -9,17 +9,17 @@ class ProjectsContent extends React.Component {
 			introText: `Since I have quite a few repos, I have compiled the repos
 			which show my latest projects and skills. I use github to organize, share, and collaborate
 			with other developers feel free to take a look at my entire github profile
-			if you feel adventurous`,
+			if you feel adventurous.`,
 			projects: [
 				{
 					name: 'Portfolio 2.0',
 					description: 'Current Site built with React.js',
-					image: 'app/assets/jscalc.jpg',
+					image: 'app/assets/portfolio2.jpg',
 				},
 				{
 					name: 'GetCarrot',
-					description: 'Prototype UI built with React and Flux',
-					image: 'app/assets/jscalc.jpg',
+					description: 'Prototype Chat UI built with React and Flux',
+					image: 'app/assets/get-carrot.jpg',
 				},
 				{
 					name: 'JS-Calculator',
@@ -28,7 +28,7 @@ class ProjectsContent extends React.Component {
 				},
 				{
 					name: 'Pomodoro Clock',
-					description: 'Timer Built with jQuery',
+					description: 'Productivity Timer Built with jQuery',
 					image: 'app/assets/pomodoroclock.jpg',
 				},
 				{
@@ -49,10 +49,12 @@ class ProjectsContent extends React.Component {
 		const projectsList = this.state.projects.map((val, i) => <ProjectItem {...val} key={i} />);
 
 		return (
-			<div>
+			<div className="projects-container">
 				<h1>{this.state.title}</h1>
-				<p>{this.state.introText}</p>
 				<div>
+					<p className="one-half-m projects-intro">{this.state.introText}</p>
+				</div>
+				<div className="three-quarters-m">
 					{projectsList}
 				</div>
 			</div>
