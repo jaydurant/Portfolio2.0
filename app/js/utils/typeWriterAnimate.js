@@ -24,7 +24,7 @@ function removeText(ref, array, index) {
 					typeWriterAnimate(ref, array);
 				}
 			}
-		}, 120);
+		}, 60);
 	}, 3000);
 }
 
