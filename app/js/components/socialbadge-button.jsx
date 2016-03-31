@@ -5,7 +5,7 @@ function SocialBadge(props) {
 		<li>
 			<a href={props.url}>
 				<button type="button">
-					{props.text}
+					<i className={`fa ${props.icon}`} ></i>{props.text}
 				</button>
 			</a>
 		</li>
@@ -15,6 +15,7 @@ function SocialBadge(props) {
 SocialBadge.propTypes = {
 	url: React.PropTypes.string,
 	text: React.PropTypes.string,
+	icon: React.PropTypes.string,
 };
 
 export default SocialBadge;

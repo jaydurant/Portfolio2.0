@@ -4,14 +4,16 @@ function ExperienceListItem(props) {
 	const textDirection = props.direction === 'left' ? 'timeline-text-left' : 'timeline-text-right';
 
 	return (
-		<li>
-			<div className={textDirection}>
-				<div>{props.organization}</div>
-				<div>{props.time}</div>
-				<h4>{`Position: ${props.position}`}</h4>
-			</div>
-			<div>
-				<img src={props.image} />
+		<li className="experience-item">
+			<div className="one-half-m">
+				<div className="experience-image-container">
+					<img src={props.image} width="200" height="200" />
+					<div className={`${textDirection} experience-item-panel`}>
+						<div className="experience-organization">{props.organization}</div>
+						<div className="experience-time">{props.time}</div>
+						<h4>{`${props.position}`}</h4>
+					</div>
+				</div>
 			</div>
 		</li>
 		);

@@ -2,10 +2,10 @@ import React from 'react';
 import ExperienceListItem from './experience-li';
 
 function ExperienceTimeline(props) {
-	const experienceItems = props.timeLine.map((val) => <ExperienceListItem {...val} />);
+	const experienceItems = props.timeLine.map((val, i) => <ExperienceListItem {...val} key={i} />);
 
 	return (
-		<ul>
+		<ul className="experience-timeline">
 			{experienceItems}
 		</ul>
 		);
