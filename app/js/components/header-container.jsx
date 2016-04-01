@@ -11,6 +11,8 @@ function HeaderContainer(props) {
 			<nav className="one-half-m">
 				<MenuContainer {...props} />
 			</nav>
+			<div className="header-strobe">
+			</div>
 		</header>
 		);
 }

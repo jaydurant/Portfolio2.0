@@ -3,7 +3,7 @@
 	padding-top:15vh;
 
 	h1{
-			@extend %h1-shadow;
+			@extend %h1;
 			@include rem("font-size",50);
 	}
 

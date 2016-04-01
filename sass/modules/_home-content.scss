@@ -7,8 +7,7 @@
 	h1{
 		@include rem('font-size',50);
 		padding-top:40vh;
-		font-weight:600;
-		@extend %h1-shadow;
+		@extend %h1;
 	}
 
 }
