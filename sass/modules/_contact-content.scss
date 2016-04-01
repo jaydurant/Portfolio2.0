@@ -1,5 +1,7 @@
 .contact-container{
 	@include align(center);
+	@extend %background-image;
+	min-height: 100vh;
 	padding-top:15vh;
 
 	h1{
@@ -13,8 +15,8 @@
 
 	h2 + a{
 		@include rem("font-size",25);
-		@extend %h1-shadow;
 		@include inline-block();
+		@extend %h1;
 		transition: 0.3s all;
 
 		&:focus,&:hover{

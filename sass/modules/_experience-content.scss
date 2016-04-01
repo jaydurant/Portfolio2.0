@@ -1,6 +1,7 @@
 .experience-container{
 	text-align:center;
 	@include rem("padding-top",100);
+	@extend %background-image;
 
 	h1{
 		@include rem('font-size',50);
