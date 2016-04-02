@@ -1,6 +1,6 @@
+
 .header-container{
 	position:fixed;
-	overflow:auto;
 	background-color:rgba(0, 0, 0, 0.24);
 	z-index:100;
 }
@@ -26,6 +26,10 @@
 	}
 }
 
+.nav-container{
+	@include inline-block();
+	width:50%;
+}
 
 
 .menu-list{
@@ -43,6 +47,7 @@
 	@include rem('font-size',17);
 	@include rem('padding',20,0,20,20);
 	@extend %h1-shadow;
+	z-index:5;
 		
 	a{
 		transition: 0.5s all;
@@ -59,6 +64,7 @@
 .menu-link{
 	@include rem('font-size',14);
 	@include inline-block();
+
 	a{
 		@include rem('padding',22);
 		display:block;
@@ -71,15 +77,80 @@
 	}
 }
 
+.menu-icon{
+	display:none;
+}
+
 @include breakpoint($sassyMedSmall){
-	.menu-list{
-		display:none;
+	
+	.header-container{
+		background-color:black;
+	}
+
+	.nav-container{
+		position:absolute;
+		display:block;
+		width:100%;
+		z-index:-100;
+		background-color: rgba(38, 37, 37, 0.86);
+		transition: 1.5s margin-top;
+		.menu-list{
+			display:block;
+			text-align:center;
+		}
+		.menu-link{
+			display:block;
+
+			a{
+				@include rem('padding',10);
+			}
+		}
+	}
+
+	.menu-icon--close{
+		.nav-container{
+			margin-top:-70%;
+		}
+	}
+
+	.menu-icon--open{
+		.nav-container{
+			margin-top:0%;
+		}
+	}
+
+	.menu-link:first-of-type ~ li{
+		border-top:1px solid white;
 	}
 
 	.menu-home-link{
-		display:block;
 		@include margin-auto();
-		@include rem("padding",14,0);
 		text-align:center;
+		display:block;
+		width:100%;
+		background-color:black;
+
+		*{
+			z-index:100;
+		}
+	}
+
+	.menu-icon{
+		@include inline-block();
+		position:absolute;
+		height:24px;
+		width:24px;
+		right: 2%;
+	}
+
+	.menu-icon--open{
+		.menu-icon{
+			background-image: url(../../app/assets/ic_close_24px.svg);
+		}
+	}
+	.menu-icon--close{
+		.menu-icon{
+			background-image: url(../../app/assets/ic_menu_24px.svg);
+		}
 	}
 }
