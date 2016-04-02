@@ -5,9 +5,11 @@ function ExperienceTimeline(props) {
 	const experienceItems = props.timeLine.map((val, i) => <ExperienceListItem {...val} key={i} />);
 
 	return (
-		<ul className="experience-timeline">
-			{experienceItems}
-		</ul>
+		<div>
+			<ul className="one-half-m experience-timeline">
+				{experienceItems}
+			</ul>
+		</div>
 		);
 }
 

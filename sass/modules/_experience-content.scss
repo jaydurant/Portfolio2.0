@@ -15,10 +15,6 @@
 
 .experience-timeline{
 	position:relative;
-	li{
-		@include rem("font-size",18);
-	}
-
 	&::before{
 		content:"";
 		position:absolute;
@@ -26,6 +22,10 @@
 		height:100%;
 		background-color:#E1E1E1;
 		width:3px;
+	}
+
+	li{
+		@include rem("font-size",18);
 	}
 
 }
@@ -50,22 +50,51 @@
 
 .experience-image-container{
 	@include inline-block();
-	@include roundedCorners(1000);
-	border:7px solid #E1E1E1;
-	background-color: #E1E1E1;
 	position:relative;
 
 
 	img{
 		@include roundedCorners(1000);
 		display:block;
+		border:7px solid #E1E1E1;
+		background-color: #E1E1E1;
 
 	}
 }
-
-//
 
 .experience-organization{
 	color: gold;
 	@include rem("font-size",23);
 }
+
+//
+@include breakpoint($sassyMedSmall){
+
+	.experience-timeline{
+		&::before{
+			left:50px;
+		}
+	}
+	
+	.experience-item{
+		text-align:left;
+	}
+
+	.experience-image-container{
+		img{
+			width:50%;
+			height:auto;
+		}
+	}
+
+	.timeline-text-left{
+		left:180px;
+	}
+
+	.timeline-text-right{
+		left:180px;
+	}
+	
+}
+
+
