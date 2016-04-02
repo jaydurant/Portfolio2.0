@@ -6,6 +6,7 @@ module.exports = {
     "rules":{
     	"indent": [2,"tab"],
     	"no-return-assign": 0,
-    	"no-use-before-define": ["error", { "functions": false }]
+    	"no-use-before-define": ["error", { "functions": false }],
+    	"max-len":1,
     }
 };

@@ -89,11 +89,11 @@
 
 	.nav-container{
 		position:absolute;
-		display:block;
 		width:100%;
 		z-index:-100;
 		background-color: rgba(38, 37, 37, 0.86);
-		transition: 1.5s margin-top;
+		margin-top:-70%;
+
 		.menu-list{
 			display:block;
 			text-align:center;
@@ -116,6 +116,8 @@
 	.menu-icon--open{
 		.nav-container{
 			margin-top:0%;
+			transition: 1s margin-top;
+			
 		}
 	}
 
