@@ -11,13 +11,19 @@ class AppContainer extends React.Component {
 				{ to: '/experience', text: 'EXPERIENCE' },
 				{ to: '/contact', text: 'CONTACT' },
 			],
+			menuState: false,
 		};
+		this.toggleMenuIcon = this.toggleMenuIcon.bind(this);
+	}
+
+	toggleMenuIcon() {
+		this.setState({ menuState: !this.state.menuState });
 	}
 
 	render() {
 		return (
 			<div className="app-container">
-				<HeaderContainer menuLinks={this.state.menuLinks} />
+				<HeaderContainer menuState={this.state.menuState} menuLinks={this.state.menuLinks} toggleMenu={this.toggleMenuIcon} />
 				<section>
 					{this.props.children}
 				</section>
