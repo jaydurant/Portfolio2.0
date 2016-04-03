@@ -82,17 +82,14 @@
 }
 
 @include breakpoint($sassyMedSmall){
-	
-	.header-container{
-		background-color:black;
-	}
 
 	.nav-container{
 		position:absolute;
 		width:100%;
 		z-index:-100;
 		background-color: rgba(38, 37, 37, 0.86);
-		margin-top:-70%;
+		top:-250%;
+		transition: 1s margin-top;
 
 		.menu-list{
 			display:block;
@@ -108,16 +105,12 @@
 	}
 
 	.menu-icon--close{
-		.nav-container{
-			margin-top:-70%;
-		}
+		//no styles for for nav when menu is closed
 	}
 
 	.menu-icon--open{
 		.nav-container{
-			margin-top:0%;
-			transition: 1s margin-top;
-			
+			margin-top:217px;
 		}
 	}
 
