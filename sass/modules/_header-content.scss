@@ -45,7 +45,7 @@
 
 .menu-home-link {
 	@include rem('font-size',17);
-	@include rem('padding',20,0,20,20);
+	@include rem('padding',20,20,20,20);
 	@extend %h1-shadow;
 	z-index:5;
 		
@@ -88,8 +88,7 @@
 		width:100%;
 		z-index:-100;
 		background-color: rgba(38, 37, 37, 0.86);
-		top:-250%;
-		transition: 1s margin-top;
+		transition: 1s top;
 
 		.menu-list{
 			display:block;
@@ -105,12 +104,14 @@
 	}
 
 	.menu-icon--close{
-		//no styles for for nav when menu is closed
+		.nav-container{
+			top:-200%;
+		}
 	}
 
 	.menu-icon--open{
 		.nav-container{
-			margin-top:217px;
+			top:100%;
 		}
 	}
 
