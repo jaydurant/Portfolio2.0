@@ -1,7 +1,6 @@
 .projects-container{
 	text-align:center;
 	padding-top:15vh;
-	@extend %background-image;
 
 	h1{
 		@include rem('font-size',50);

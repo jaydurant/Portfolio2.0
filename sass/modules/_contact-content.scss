@@ -1,6 +1,5 @@
 .contact-container{
 	@include align(center);
-	@extend %background-image;
 	min-height: 100vh;
 	padding-top:15vh;
 

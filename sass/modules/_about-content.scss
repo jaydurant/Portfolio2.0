@@ -2,7 +2,6 @@
 	text-align:center;
 	min-height: 100vh;
 	padding-top: 20vh;
-	@extend %background-image;
 
 	h1{
 		@include rem('font-size',50);
