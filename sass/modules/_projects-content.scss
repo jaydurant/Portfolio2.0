@@ -70,9 +70,44 @@
 	@include roundedCorners(10);
 	transform: rotateY(180deg);
 	background:white;
-	p{
+	text-align:center;
+
+	h3{
+		@include rem("font-size",17);
+		margin:0;
+		text-decoration:underline;
+	}
+
+	*{
 		color:black;
+	}
+
+	p{
 		@include rem('font-size',18);
+	}
+
+	ul{
+		li{
+			list-style:disc;
+			margin-left:60%;
+		}
+	}	
+}
+
+.project-links{
+	a{
+		@include rem("margin-top",10);
+		@include rem("font-size",15);
+		display:block;
+		color:blue;
+		text-decoration:underline;
+		font-weight:bold;
+		transition: 0.3s all;
+
+		&:hover,&:focus{
+			@include rem('font-size',16);
+			text-decoration: none;
+		}
 	}
 	
 }
