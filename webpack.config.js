@@ -42,7 +42,6 @@ module.exports = {
 	eslint: {
 		failOnWarning: false,
 		failOnError: false,
-		fix: true
 	},
 
 	plugins: [
