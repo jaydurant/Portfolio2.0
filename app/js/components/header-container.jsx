@@ -5,6 +5,7 @@ import { IndexLink } from 'react-router';
 function HeaderContainer(props) {
 	const spaceIcon = <i className="fa fa-keyboard-o fa-lg"></i>;
 	const menuState = props.menuState ? 'menu-icon--open' : 'menu-icon--close';
+
 	return (
 		<header className={`container header-container ${menuState}`}>
 			<div className="one-half-m menu-home-link">

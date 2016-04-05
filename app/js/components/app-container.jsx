@@ -1,5 +1,6 @@
 import React from 'react';
 import HeaderContainer from './header-container';
+import menuScrollEffect from '../utils/menuScrollEffect';
 
 class AppContainer extends React.Component {
 	constructor() {
@@ -16,14 +17,21 @@ class AppContainer extends React.Component {
 		this.toggleMenuIcon = this.toggleMenuIcon.bind(this);
 	}
 
+	componentDidMount() {
+		const menuNode = this._menu.querySelector('header');
+		menuScrollEffect(menuNode, 'header-container--pinned');
+	}
+
 	toggleMenuIcon() {
 		this.setState({ menuState: !this.state.menuState });
 	}
 
 	render() {
 		return (
-			<div className="app-container">
-				<HeaderContainer menuState={this.state.menuState} menuLinks={this.state.menuLinks} toggleMenu={this.toggleMenuIcon} />
+			<div className="app-container" >
+				<div ref={(elem) => this._menu = elem }>
+					<HeaderContainer menuState={this.state.menuState} menuLinks={this.state.menuLinks} toggleMenu={this.toggleMenuIcon} />
+				</div>
 				<section>
 					{this.props.children}
 				</section>

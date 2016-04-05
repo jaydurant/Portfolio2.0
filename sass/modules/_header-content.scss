@@ -1,8 +1,22 @@
-
 .header-container{
 	position:fixed;
 	background-color:rgba(0, 0, 0, 0.24);
 	z-index:100;
+	height:65px;
+	transition: 0.5s all;
+}
+
+.header-container--pinned{
+	background-color:#303030;
+	height:75px;
+
+	.menu-home-link{
+		background-color:#303030;
+	}
+
+	.header-strobe{
+		background-image:linear-gradient(to right, rgba( 50,50,50,1 ) 20%, rgba( 0,0,0,0.1 ) 50%, rgba( 50,50,50,1 ) 80%);
+	}
 }
 
 .header-strobe{
@@ -29,8 +43,12 @@
 .nav-container{
 	@include inline-block();
 	width:50%;
+	height:100%;
 }
 
+.nav-container *{
+	height:100%;
+}
 
 .menu-list{
 	text-align:right;
@@ -45,8 +63,9 @@
 
 .menu-home-link {
 	@include rem('font-size',17);
-	@include rem('padding',20,20,20,20);
+	@include rem('padding',20);
 	@extend %h1-shadow;
+	height:100%;
 	z-index:5;
 		
 	a{
@@ -96,16 +115,14 @@
 		}
 		.menu-link{
 			display:block;
-
-			a{
-				@include rem('padding',10);
-			}
+			background-color:black;
+			height:65px;
 		}
 	}
 
 	.menu-icon--close{
 		.nav-container{
-			top:-200%;
+			top:-300%;
 		}
 	}
 
