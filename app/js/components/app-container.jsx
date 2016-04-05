@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import HeaderContainer from './header-container';
 import menuScrollEffect from '../utils/menuScrollEffect';
 
@@ -33,7 +34,11 @@ class AppContainer extends React.Component {
 					<HeaderContainer menuState={this.state.menuState} menuLinks={this.state.menuLinks} toggleMenu={this.toggleMenuIcon} />
 				</div>
 				<section>
-					{this.props.children}
+					<ReactCSSTransitionGroup transitionName="view" transitionEnterTimeout={2000} transitionLeaveTimeout={300} transitionAppear>
+					{React.cloneElement(this.props.children, {
+						key: this.props.location.pathname,
+					})}
+					</ReactCSSTransitionGroup>
 				</section>
 			</div>
 			);
@@ -43,6 +48,7 @@ class AppContainer extends React.Component {
 
 AppContainer.propTypes = {
 	children: React.PropTypes.object,
+	location: React.PropTypes.object,
 };
 
 export default AppContainer;
