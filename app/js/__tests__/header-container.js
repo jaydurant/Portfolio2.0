@@ -18,7 +18,7 @@ describe('HeaderContainer', () => {
 	const menuDiv = header.props.children[1];
 
 	it("displays the website's title", () => {
-		expect(titleDiv.props.children).toMatch(/Jason Durant/);
+		expect(titleDiv.props.children[0].props.children[0]).toBe('JASON DURANT ');
 	});
 
 	it('displays the menu and menulinks', () => {
