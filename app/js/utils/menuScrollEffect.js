@@ -8,12 +8,9 @@ function menuScrollEffect(node, className) {
 				html.clientHeight, html.scrollHeight, html.offsetHeight) * 0.01;
 
 			const windowScrolled = window.scrollY;
-			console.log(windowScrolled, height);
 			if (windowScrolled > height) {
-				console.log('over');
 				node.classList.add(className);
 			} else {
-				console.log('below');
 				node.classList.remove(className);
 			}
 		});

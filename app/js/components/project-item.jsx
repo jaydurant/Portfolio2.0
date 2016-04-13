@@ -1,7 +1,6 @@
 import React from 'react';
 
 function ProjectsItem(props) {
-	console.log(props);
 	const tools = props.tools.map((val, i) => <li key={i}>{val}</li>);
 	return (
 		<div className="one-half-m project-item-container">
