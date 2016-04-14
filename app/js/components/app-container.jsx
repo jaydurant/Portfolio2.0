@@ -34,7 +34,7 @@ class AppContainer extends React.Component {
 					<HeaderContainer menuState={this.state.menuState} menuLinks={this.state.menuLinks} toggleMenu={this.toggleMenuIcon} />
 				</div>
 				<section>
-					<ReactCSSTransitionGroup transitionName="view" transitionEnterTimeout={2000} transitionLeaveTimeout={300} transitionAppear>
+					<ReactCSSTransitionGroup transitionName="view" transitionEnterTimeout={2000} transitionLeaveTimeout={300} transitionAppear transitionAppearTimeout={500}>
 					{React.cloneElement(this.props.children, {
 						key: this.props.location.pathname,
 					})}

@@ -31,13 +31,13 @@ class AboutContent extends React.Component {
 					{this.state.paragraph}
 				</p>
 				<div>
-					<p className=" about-contact-text">
-					{this.state.contactText}
-					<Link to={this.state.contactLink.to}>
-						{this.state.contactLink.text}
-					</Link>
+					<p className="about-contact-text">
+						{this.state.contactText}
+						<Link to={this.state.contactLink.to}>
+							{this.state.contactLink.text}
+						</Link>
 					</p>
-					<p className=" three-quarters-m about-mantra">
+					<p className="three-quarters-m about-mantra">
 						I firmly believe in the power of the Open Source community which and
 						the democratization of information, which is why I support and contribute to
 						Open Source Projects.
