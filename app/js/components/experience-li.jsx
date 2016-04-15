@@ -5,7 +5,7 @@ function ExperienceListItem(props) {
 
 	return (
 		<li className="experience-item">
-			<div className="">
+			<div>
 				<div className="experience-image-container">
 					<img src={props.image} width="200" height="200" />
 					<div className={`${textDirection} experience-item-panel`}>
