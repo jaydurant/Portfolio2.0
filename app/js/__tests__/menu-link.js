@@ -13,7 +13,6 @@ describe ('MenuLink', () => {
 	const renderer = TestUtils.createRenderer();
 	renderer.render(<MenuLink {...properties} />);
 	const renderedTree = renderer.getRenderOutput();
-
 	const li = renderedTree;
 	const link = renderedTree.props.children;
 
