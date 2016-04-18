@@ -26,7 +26,6 @@ describe('typeWriterAnimate', () => {
 		typeWriterAnimate(header,sampleTextArray);
 		jest.runOnlyPendingTimers();
 		jest.runOnlyPendingTimers();
-		console.log(setInterval.mock.calls)
 		expect(setInterval.mock.calls.length).toBe(2);
 		expect(setInterval.mock.calls[1][1]).toBe(60);
 	})
