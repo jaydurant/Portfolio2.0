@@ -14,7 +14,7 @@ class ProjectsContent extends React.Component {
 				{
 					name: 'Portfolio 2.0',
 					description: 'Current Site built with React.js',
-					image: 'app/assets/portfolio2.jpg',
+					image: 'app/assets/portfolio2.0.jpg',
 					tools: ['React', 'React-Router', 'ES6', 'Node.js', 'JS', 'Sass', 'Webpack',
 					'HTML5', 'eslint', 'Jasmine'],
 					demo: '',

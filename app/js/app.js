@@ -55,7 +55,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "233922ac80a23782303c"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "99a9dfc2bffbf041224a"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -26006,7 +26006,7 @@
 						null,
 						_react3.default.createElement(
 							_reactAddonsCssTransitionGroup2.default,
-							{ transitionName: 'view', transitionEnterTimeout: 2000, transitionLeaveTimeout: 300, transitionAppear: true },
+							{ transitionName: 'view', transitionEnterTimeout: 2000, transitionLeaveTimeout: 300, transitionAppear: true, transitionAppearTimeout: 500 },
 							_react3.default.cloneElement(this.props.children, {
 								key: this.props.location.pathname
 							})
@@ -31928,12 +31928,9 @@
 				var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight) * 0.01;
 
 				var windowScrolled = window.scrollY;
-				console.log(windowScrolled, height);
 				if (windowScrolled > height) {
-					console.log('over');
 					node.classList.add(className);
 				} else {
-					console.log('below');
 					node.classList.remove(className);
 				}
 			});
@@ -32209,7 +32206,7 @@
 						null,
 						_react3.default.createElement(
 							'p',
-							{ className: ' about-contact-text' },
+							{ className: 'about-contact-text' },
 							this.state.contactText,
 							_react3.default.createElement(
 								_reactRouter.Link,
@@ -32219,7 +32216,7 @@
 						),
 						_react3.default.createElement(
 							'p',
-							{ className: ' three-quarters-m about-mantra' },
+							{ className: 'three-quarters-m about-mantra' },
 							'I firmly believe in the power of the Open Source community which and the democratization of information, which is why I support and contribute to Open Source Projects.'
 						)
 					)
@@ -32606,7 +32603,7 @@
 			{ className: 'experience-item' },
 			_react2.default.createElement(
 				'div',
-				{ className: '' },
+				null,
 				_react2.default.createElement(
 					'div',
 					{ className: 'experience-image-container' },
@@ -32712,7 +32709,7 @@
 				projects: [{
 					name: 'Portfolio 2.0',
 					description: 'Current Site built with React.js',
-					image: 'app/assets/portfolio2.jpg',
+					image: 'app/assets/portfolio2.0.jpg',
 					tools: ['React', 'React-Router', 'ES6', 'Node.js', 'JS', 'Sass', 'Webpack', 'HTML5', 'eslint', 'Jasmine'],
 					demo: '',
 					github: 'https://github.com/jaydurant/Portfolio2.0'
@@ -32813,7 +32810,6 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function ProjectsItem(props) {
-		console.log(props);
 		var tools = props.tools.map(function (val, i) {
 			return _react2.default.createElement(
 				"li",
