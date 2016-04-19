@@ -28,7 +28,7 @@ The purpose of this project as stated above was to create my portfolio site. In 
 | app/js/ | unit tests, components, and utility scripts |
 | app/__tests__ | unit tests |
 | app/js/components/ | react componenets |
-| app/js/util/ | helper functions |
+| app/js/utils/ | helper functions (i.e. javascript animations) |
 | app/js/app.jsx | entry javascript file |
 | app/js/prod | production javascript, css, and image files |
 | sass/ | contains SMACSS structured SCSS files |
