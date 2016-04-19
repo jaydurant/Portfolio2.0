@@ -6,7 +6,6 @@ The purpose of this project as stated above was to create my portfolio site. In 
 ##Tools & Tech
 
 | Tools | Description |
-| _____ | ___________ |
 | React.js | View Library for representing data structures |
 | React Router | React Router Component Library which utilizes the History API |
 | ES6 | Newly approved version of Javascript Syntax |
