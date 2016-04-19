@@ -29,7 +29,7 @@ The purpose of this project as stated above was to create my portfolio site. In 
 | app | dev and production javascript code |
 | app/assets/ | image assets |
 | app/js/ | unit tests, components, and utility scripts |
-| app/__tests__ | unit tests |
+| app/\__tests\__ | unit tests |
 | app/js/components/ | react componenets |
 | app/js/utils/ | helper functions (i.e. javascript animations) |
 | app/js/app.jsx | entry javascript file |
