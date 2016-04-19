@@ -1,6 +1,8 @@
 #Portfolio 2.0
 This project is the repository for my portfolio which displays my philosophy for computer science and work experience. If anyone would like to reach out to me feel free to email me @ durantjay1@gmail.com
 
+![Screenshot](https://i.imgur.com/aLiY8sU.png)
+
 ##Purpose
 The purpose of this project as stated above was to create my portfolio site. In addition, the goal was the expand my knowledge of several React tools like Jest Unit Tests, React-Router, and my ability to recreate javascript animations (e.g the typewriter effect and class change on scroll).
 ##Tools & Tech
